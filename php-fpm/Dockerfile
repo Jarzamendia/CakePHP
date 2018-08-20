@@ -20,6 +20,7 @@ RUN set -xe \
     && apk del .build-deps \
     && rm -rf /tmp/* /usr/local/lib/php/doc/* /var/cache/apk/*
 
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 COPY php-ini-overrides.ini /etc/php/7.1/fpm/conf.d/99-overrides.ini
 
