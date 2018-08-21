@@ -1,10 +1,12 @@
-#CakePHP/Docker
+# CakePHP/Docker #
 
-Modo de usar
+## Modo de usar ##
 
-##Windows
+## Windows ##
 
 Instale o Docker for Windows (https://docs.docker.com/docker-for-windows/install/)
+
+Talvez seja necessario compartilhar o drive onde os arquivos estarão. Isto é feito através das configurações do Docker for Windows.
 
 Após a instalação, utilizando os containers do tipo "linux", inicie o SWARM.
 
