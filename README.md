@@ -8,11 +8,11 @@ Instale o Docker for Windows (https://docs.docker.com/docker-for-windows/install
 
 Após a instalação, utilizando os containers do tipo "linux", inicie o SWARM.
 
-> "docker swarm init"
+> docker swarm init
 
 Após isto basta iniciar o serviço:
 
-> "docker stack deploy -c service.yml"
+> docker stack deploy -c service.yml
 
 Para facilitar, execute este comando direto da pasta CakePHP, assim a hierarquia de diretórios não irá falhar.
 
