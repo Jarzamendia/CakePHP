@@ -92,6 +92,27 @@ services:
     networks:
       - appnet
 
+  adminer:
+
+    image: "adminer"
+
+    ports:
+
+      - target: 8080
+        published: 8080
+        protocol: tcp
+        mode: host
+    
+    deploy:
+      mode: replicated
+      replicas: 1
+
+      restart_policy:
+        condition: any
+
+    networks:
+      - appnet
+
 #A rede que os containers utilizarão.
 networks:
   appnet:
